@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8">
+    <title>Đăng nhập / Đăng ký</title>
+    <script src="https://www.gstatic.com/firebasejs/10.0.0/firebase-app-compat.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/10.0.0/firebase-auth-compat.js"></script>
+    <link rel="stylesheet" href="auth.css">
+</head>
+<body>
+    <div class="auth-container">
+        <h2>Đăng nhập hoặc Đăng ký</h2>
+        <input type="email" id="email" placeholder="Email">
+        <input type="password" id="password" placeholder="Mật khẩu">
+        <button onclick="signIn()">Đăng nhập</button>
+        <button onclick="signUp()">Tạo tài khoản</button>
+        <hr>
+        <button onclick="signInWithGoogle()" class="google-btn">
+            <img src="https://www.svgrepo.com/show/475656/google-color.svg" alt="Google" class="social-icon">
+            Đăng nhập với Google
+        </button>
+        <button onclick="signInWithFacebook()" class="facebook-btn">
+            <img src="https://cdn-icons-png.flaticon.com/512/145/145802.png" alt="Facebook" class="social-icon">
+            Đăng nhập với Facebook
+        </button>
+        <p id="auth-msg" style="color:red;"></p>
+        <button onclick="logout()" class="logout-btn">Đăng xuất</button>
+    </div>
+
+    <script src="auth.js"></script>
+</body>
+</html>

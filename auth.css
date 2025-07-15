@@ -1,0 +1,53 @@
+body {
+    font-family: Arial;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: #fefaf3;
+}
+
+.auth-container {
+    background: #fff;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.2);
+    width: 300px;
+    text-align: center;
+}
+
+.auth-container input {
+    width: 90%;
+    margin: 10px 0;
+    padding: 10px;
+}
+
+.auth-container button {
+    margin: 5px;
+    padding: 10px;
+    width: 90%;
+    border: none;
+    border-radius: 5px;
+    background-color: #6d5435;
+    color: white;
+    cursor: pointer;
+}
+
+.google-btn {
+    background-color: #db4437;
+}
+
+.facebook-btn {
+    background-color: #3b5998;
+}
+
+.logout-btn {
+    background-color: #aaa;
+}
+
+.social-icon {
+    width: 20px;
+    height: 20px;
+    vertical-align: middle;
+    margin-right: 8px;
+}
